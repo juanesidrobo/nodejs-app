@@ -21,4 +21,4 @@ jobs:
               run: echo ${{env.USER_REPOSITORY}}
 
             - name: Show variable in actions
-              run: echo${{vars.OTHERVAR}}
+              run: echo ${{vars.OTHERVAR}}
