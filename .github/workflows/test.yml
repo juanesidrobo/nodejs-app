@@ -19,3 +19,6 @@ jobs:
 
             - name: Show variable in file
               run: echo ${{env.USER_REPOSITORY}}
+
+            - name: Show variable in actions
+              run: echo${{vars.OTHERVAR}}
