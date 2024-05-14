@@ -13,4 +13,4 @@ jobs:
             - name: Show message # no hay problema con el name ya que es una estructura anidada
               run: echo "Juanes 20/05/24 " #LOS ESPACIOS SON MUY IMPORTANTES :v
             - name: Show secret
-            - run: echo ${{secrets.OTRASECRET}}
+              run: echo ${{secrets.OTRASECRET}}
