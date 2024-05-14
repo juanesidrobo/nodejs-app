@@ -4,6 +4,8 @@ on:
     push: 
         branches: #nivel de rama
         - "main" # el nombre de la rama y puede ir una lista de ramas
+env: 
+  USER_REPOSITORY: Jaun
 
 jobs:
     test_ads: # nombre de nuestro jobs par hacer las pruebas necesitamos una maquina virtual, debemos de indicarle que version de linux
@@ -14,3 +16,6 @@ jobs:
               run: echo "Juanes 20/05/24 " #LOS ESPACIOS SON MUY IMPORTANTES :v
             - name: Show secret
               run: echo ${{secrets.OTRASECRET}}
+
+            - name: Show variable in file
+              run: echo ${{env.USER_REPOSITORY}}
