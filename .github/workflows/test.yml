@@ -22,3 +22,10 @@ jobs:
 
             - name: Show variable in actions
               run: echo ${{vars.OTHERVAR}}
+
+            - uses: actions/setup-node@v4
+              with: 
+                node-version: '20.x'
+            
+            - name: Test setup node
+              run: node --version
